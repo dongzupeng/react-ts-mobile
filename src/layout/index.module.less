@@ -1,0 +1,27 @@
+.app {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .top {
+    flex: 0;
+    border-bottom: solid 1px var(--adm-color-border);
+  }
+  
+  .body {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom {
+    /* 固定在底部 */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex: 0;
+    border-top: solid 1px var(--adm-color-border);
+    background-color: white; /* 可根据需要设置背景颜色 */
+  }
