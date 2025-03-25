@@ -29,6 +29,8 @@ const Bottom: FC = () => {
     const { pathname } = location
 
     const setRouteActive = (value: string) => {
+        console.log(value,"value>>>");
+        if (pathname === value) return
         navigate(value)
     }
 
